@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/vikashkumardatascience007/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC
+Author: vikashkumardatascience007
+Author-email: vikash.datascience.007@gmail.com
+Project-URL: Bug Tracker, https://github.com/vikashkumardatascience007/End-to-End-Chest-Cancer-Classification-using-MLflow-DVC/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# Chest-cancer-using-deep-learing-mlflow-
+
