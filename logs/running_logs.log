@@ -1,1 +1,120 @@
 [2026-01-04 00:00:16,178: INFO: main: Welcom to cnn  classifier]
+[2026-01-04 01:53:47,036: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-04 01:53:47,036: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 12:16:12,992: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 12:16:12,992: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 12:16:12,992: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 12:16:12,992: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\utils\common.py", line 31, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 283, in box.box.Box.__init__
+box.exceptions.BoxValueError: Cannot extrapolate Box from string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 15, in <module>
+    obj.main()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    config = ConfigurationManager()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\config\configuration.py", line 14, in __init__
+    self.params = read_yaml(params_filepath)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\utils\common.py", line 33, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2026-01-06 12:27:16,050: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 12:27:16,052: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 12:27:16,053: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 12:27:16,054: INFO: common: created directory at: artifacts]
+[2026-01-06 12:27:16,054: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 12:27:16,055: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2026-01-06 12:27:16,187: ERROR: main: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1z0mreUtRmR-P-magILsDR3T7M6IkGXtY (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1147)')))]
+Traceback (most recent call last):
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\util\ssl_.py", line 483, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\util\ssl_.py", line 527, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\ssl.py", line 501, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\ssl.py", line 1345, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1147)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1147)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1z0mreUtRmR-P-magILsDR3T7M6IkGXtY (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1147)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 15, in <module>
+    obj.main()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 18, in main
+    data_ingestion.download_file()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\components\data_ingestion.py", line 34, in download_file
+    raise e
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\components\data_ingestion.py", line 29, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\gdown\download.py", line 202, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\requests\adapters.py", line 675, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=1z0mreUtRmR-P-magILsDR3T7M6IkGXtY (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1147)')))
+[2026-01-06 12:33:23,669: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 12:33:23,669: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 12:33:23,669: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 12:33:23,669: INFO: common: created directory at: artifacts]
+[2026-01-06 12:33:23,677: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 12:33:23,677: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 12:33:23,677: INFO: main: *******************]
+[2026-01-06 12:33:23,677: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 12:33:23,677: ERROR: main: name 'PrepareBaseModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 27, in <module>
+    prepare_base_model = PrepareBaseModelTrainingPipeline()
+NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
+[2026-01-06 12:35:23,735: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 12:35:23,735: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 12:35:23,735: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 12:35:23,735: INFO: common: created directory at: artifacts]
+[2026-01-06 12:35:23,750: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 12:35:23,751: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
