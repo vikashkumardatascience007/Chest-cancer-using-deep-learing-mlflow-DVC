@@ -118,3 +118,55 @@ NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
 [2026-01-06 12:35:23,751: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2026-01-06 13:37:18,412: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 13:37:18,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 13:37:18,420: INFO: common: created directory at: artifacts]
+[2026-01-06 13:37:18,421: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-06 13:37:32,951: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-06 14:03:08,567: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 14:03:08,567: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 14:03:08,571: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 14:03:08,571: INFO: common: created directory at: artifacts]
+[2026-01-06 14:03:08,571: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 14:03:08,571: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 14:03:08,571: INFO: main: *******************]
+[2026-01-06 14:03:08,571: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 14:03:08,575: ERROR: main: name 'PrepareBaseModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 27, in <module>
+    prepare_base_model = PrepareBaseModelTrainingPipeline()
+NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
+[2026-01-06 14:05:45,651: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 14:05:45,673: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 14:05:45,675: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 14:05:45,676: INFO: common: created directory at: artifacts]
+[2026-01-06 14:05:45,676: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 14:05:45,676: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 14:05:45,676: INFO: main: *******************]
+[2026-01-06 14:05:45,676: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 14:05:45,676: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 14:05:45,676: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 14:05:45,676: INFO: common: created directory at: artifacts]
+[2026-01-06 14:05:45,676: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-06 14:51:20,236: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 14:51:20,236: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 14:51:20,236: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 14:51:20,236: INFO: common: created directory at: artifacts]
+[2026-01-06 14:51:20,236: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 14:51:20,236: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 14:51:20,250: INFO: main: *******************]
+[2026-01-06 14:51:20,250: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 14:51:20,250: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 14:51:20,259: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 14:51:20,259: INFO: common: created directory at: artifacts]
+[2026-01-06 14:51:20,259: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-06 14:51:20,644: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-06 14:51:20,778: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
