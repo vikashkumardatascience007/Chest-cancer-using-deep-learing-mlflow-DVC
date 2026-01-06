@@ -229,3 +229,103 @@ x==========x]
 [2026-01-06 15:25:16,673: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2026-01-06 16:55:46,111: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 16:55:46,111: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 16:55:46,111: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 16:55:46,111: INFO: common: created directory at: artifacts]
+[2026-01-06 16:55:46,111: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 16:55:46,111: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 16:55:46,119: INFO: main: *******************]
+[2026-01-06 16:55:46,119: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 16:55:46,119: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 16:55:46,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 16:55:46,119: INFO: common: created directory at: artifacts]
+[2026-01-06 16:55:46,119: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-06 16:55:46,461: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-06 16:55:46,634: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-06 16:55:46,634: INFO: main: *******************]
+[2026-01-06 16:55:46,634: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-06 16:55:46,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 16:55:46,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 16:55:46,643: INFO: common: created directory at: artifacts]
+[2026-01-06 16:55:46,643: INFO: common: created directory at: artifacts\training]
+[2026-01-06 16:56:05,897: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-06 16:56:05,897: INFO: main: *******************]
+[2026-01-06 16:56:05,897: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-01-06 16:56:05,905: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 16:56:05,905: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 16:56:05,905: INFO: common: created directory at: artifacts]
+[2026-01-06 16:56:11,925: INFO: common: json file saved at: scores.json]
+[2026-01-06 16:56:11,925: INFO: common: json file saved at: scores.json]
+[2026-01-06 16:56:11,925: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2026-01-06 17:03:58,680: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-06 17:03:58,680: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 17:03:58,680: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 17:03:58,680: INFO: common: created directory at: artifacts]
+[2026-01-06 17:03:58,680: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-06 17:03:58,690: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-06 17:03:58,690: INFO: main: *******************]
+[2026-01-06 17:03:58,690: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-06 17:03:58,690: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 17:03:58,690: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 17:03:58,690: INFO: common: created directory at: artifacts]
+[2026-01-06 17:03:58,690: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-06 17:03:59,069: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-06 17:03:59,253: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-06 17:03:59,253: INFO: main: *******************]
+[2026-01-06 17:03:59,253: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-06 17:03:59,253: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 17:03:59,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 17:03:59,253: INFO: common: created directory at: artifacts]
+[2026-01-06 17:03:59,261: INFO: common: created directory at: artifacts\training]
+[2026-01-06 17:04:19,750: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-06 17:04:19,750: INFO: main: *******************]
+[2026-01-06 17:04:19,750: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-01-06 17:04:19,750: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-06 17:04:19,758: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-06 17:04:19,758: INFO: common: created directory at: artifacts]
+[2026-01-06 17:04:25,972: INFO: common: json file saved at: scores.json]
+[2026-01-06 17:04:25,972: INFO: common: json file saved at: scores.json]
+[2026-01-06 17:04:27,038: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-01-06 17:04:27,423: INFO: builder_impl: Assets written to: C:\Users\VIKASH~1.KUM\AppData\Local\Temp\tmpso6stboh\model\data\model\assets]
+[2026-01-06 17:04:36,297: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 57, in <module>
+    model_evalution.main()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
