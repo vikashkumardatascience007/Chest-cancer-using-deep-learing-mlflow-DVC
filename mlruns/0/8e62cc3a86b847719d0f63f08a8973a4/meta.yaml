@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Vikash-github/git-hub/MLOPs/Chest-cancer-using-deep-learing-mlflow-/mlruns/0/8e62cc3a86b847719d0f63f08a8973a4/artifacts
+end_time: 1768055843494
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8e62cc3a86b847719d0f63f08a8973a4
+run_name: dashing-mouse-970
+run_uuid: 8e62cc3a86b847719d0f63f08a8973a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768055836013
+status: 4
+tags: []
+user_id: vikash.vk.kumar

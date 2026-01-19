@@ -1,7 +1,7 @@
 import os
-from cnnClassifier.constants.const import *
-from cnnClassifier.utils.common import read_yaml, create_directories
-from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig, EvaluationConfig
+from ..constants.const import *
+from ..utils.common import read_yaml, create_directories
+from ..entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig, EvaluationConfig
 
 
 

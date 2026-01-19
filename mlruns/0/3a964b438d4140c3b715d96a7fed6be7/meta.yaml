@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Vikash-github/git-hub/MLOPs/Chest-cancer-using-deep-learing-mlflow-/mlruns/0/3a964b438d4140c3b715d96a7fed6be7/artifacts
+end_time: 1768055192665
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a964b438d4140c3b715d96a7fed6be7
+run_name: industrious-carp-631
+run_uuid: 3a964b438d4140c3b715d96a7fed6be7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768055182982
+status: 4
+tags: []
+user_id: vikash.vk.kumar

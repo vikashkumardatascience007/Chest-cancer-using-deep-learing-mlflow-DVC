@@ -392,3 +392,129 @@ Traceback (most recent call last):
   File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
     from distutils._modified import newer
 ModuleNotFoundError: No module named 'distutils._modified'
+[2026-01-10 19:54:32,514: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-10 19:54:32,514: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 19:54:32,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 19:54:32,514: INFO: common: created directory at: artifacts]
+[2026-01-10 19:54:32,514: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-10 19:54:32,514: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-10 19:54:32,522: INFO: main: *******************]
+[2026-01-10 19:54:32,522: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-10 19:54:32,524: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 19:54:32,524: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 19:54:32,524: INFO: common: created directory at: artifacts]
+[2026-01-10 19:54:32,526: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-10 19:54:32,937: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-10 19:54:33,196: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-10 19:54:33,196: INFO: main: *******************]
+[2026-01-10 19:54:33,196: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-10 19:54:33,204: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 19:54:33,205: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 19:54:33,205: INFO: common: created directory at: artifacts]
+[2026-01-10 19:54:33,207: INFO: common: created directory at: artifacts\training]
+[2026-01-10 19:56:14,171: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-10 19:56:14,171: INFO: main: *******************]
+[2026-01-10 19:56:14,173: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-01-10 19:56:14,173: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 19:56:14,173: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 19:56:14,173: INFO: common: created directory at: artifacts]
+[2026-01-10 19:56:22,566: INFO: common: json file saved at: scores.json]
+[2026-01-10 19:56:22,573: INFO: common: json file saved at: scores.json]
+[2026-01-10 19:56:23,736: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-01-10 19:56:24,155: INFO: builder_impl: Assets written to: C:\Users\VIKASH~1.KUM\AppData\Local\Temp\tmpv06au4b5\model\data\model\assets]
+[2026-01-10 19:56:32,666: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 57, in <module>
+    model_evalution.main()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
+[2026-01-10 20:06:49,218: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-01-10 20:06:49,218: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 20:06:49,228: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 20:06:49,228: INFO: common: created directory at: artifacts]
+[2026-01-10 20:06:49,228: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-01-10 20:06:49,232: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-01-10 20:06:49,233: INFO: main: *******************]
+[2026-01-10 20:06:49,233: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2026-01-10 20:06:49,237: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 20:06:49,240: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 20:06:49,241: INFO: common: created directory at: artifacts]
+[2026-01-10 20:06:49,241: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-01-10 20:06:49,583: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-01-10 20:06:49,758: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2026-01-10 20:06:49,758: INFO: main: *******************]
+[2026-01-10 20:06:49,761: INFO: main: >>>>>> stage Training started <<<<<<]
+[2026-01-10 20:06:49,761: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 20:06:49,770: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 20:06:49,770: INFO: common: created directory at: artifacts]
+[2026-01-10 20:06:49,772: INFO: common: created directory at: artifacts\training]
+[2026-01-10 20:07:09,373: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2026-01-10 20:07:09,373: INFO: main: *******************]
+[2026-01-10 20:07:09,373: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2026-01-10 20:07:09,373: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-01-10 20:07:09,373: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-01-10 20:07:09,381: INFO: common: created directory at: artifacts]
+[2026-01-10 20:07:15,729: INFO: common: json file saved at: scores.json]
+[2026-01-10 20:07:15,729: INFO: common: json file saved at: scores.json]
+[2026-01-10 20:07:16,721: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2026-01-10 20:07:17,107: INFO: builder_impl: Assets written to: C:\Users\VIKASH~1.KUM\AppData\Local\Temp\tmp0dfveuf6\model\data\model\assets]
+[2026-01-10 20:07:23,494: ERROR: main: No module named 'distutils._modified']
+Traceback (most recent call last):
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\main.py", line 57, in <module>
+    model_evalution.main()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "D:\Vikash-github\git-hub\MLOPs\Chest-cancer-using-deep-learing-mlflow-\src\cnnClassifier\components\model_evaluation_mlflow.py", line 74, in log_into_mlflow
+    mlflow.keras.log_model(self.model, "model")
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tensorflow\__init__.py", line 222, in log_model
+    return Model.log(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\models\model.py", line 552, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\fluent.py", line 817, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\client.py", line 1069, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 448, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 58, in log_artifacts
+    dir_util.copy_tree(src=local_dir, dst=artifact_dir, preserve_mode=0, preserve_times=0)
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 150, in copy_tree
+    return list(itertools.chain.from_iterable(map(copy_one, names)))
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\dir_util.py", line 192, in _copy_one
+    file_util.copy_file(
+  File "C:\Users\vikash.vk.kumar\AppData\Local\anaconda3\envs\cancer\lib\site-packages\setuptools\_distutils\file_util.py", line 104, in copy_file
+    from distutils._modified import newer
+ModuleNotFoundError: No module named 'distutils._modified'
